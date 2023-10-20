@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curriculo Pessoal - Karina</title> 
+
+    <style>
+        body { /* estilizando todo o corpo da página*/
+            margin: 0;
+            background-color: rgb(248, 231, 240) /*cor de fundo da página*/
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header { /*estilização do cabeçalho*/
+            grid-column-start:1;
+            grid-column-end: 12;
+            background-color: rgb(251, 210, 210);
+            border: 5px solid rgb(10, 9, 9);
+            padding: 15px; /*espaço ao redor do conteúdo*/
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 120%;
+            text-align: justify; /*alinhamento do texto*/
+        }
+
+        .menu { /*estilização do menu clicável*/
+            margin-top: 1%;
+            grid-column-start:8;
+            grid-column-end: 12;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: none; /*retirar os pontos da lista não ordenado*/
+        }
+
+        a, a:link { /*estilização dos links clicáveis*/
+            text-decoration-line: none;
+            padding: 5px 10px;
+            border: solid #030404 3px;
+            background-color: rgb(241, 236, 239);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: black;
+            font-size: large;
+        }
+
+        li {
+            float:left;
+        }
+
+        .oval { /*estilização da foto*/
+            margin-top: 1%;
+            margin-bottom: 1%;
+            border-radius: 30%;
+            border: 5px solid #030303;
+            float: right;
+        }
+
+        h2 { 
+            grid-column-start:1;
+            grid-column-end: 12;
+            text-align: center; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+            color: black;
+            font-size: 150%;
+        }
+    
+        p {  /*estilização dos parágrafos*/
+            text-align: left;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+            font-size: large;
+            padding-left: 20px;
+            padding-right: 20px; /*espaçamento do texto para os cantos da página*/
+            
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(251, 210, 210);
+            border: 5px solid rgb(10, 9, 9);
+            color: rgb(11, 1, 1);
+            text-align: center;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <header class="container"> <!--Título da Página-->
+        <h1 style="color: rgb(8, 8, 8); text-align: center;"> Karina Oliveira</h1> 
+    </header>
+
+    <!--Imagem para o currículo-->
+    <img class="oval" src="IMG_20230716_201153.jpg" alt="Foto Karina" style="width: 20%;" style="height:20%;">
+
+        <div class: class="container menu"> <!--Menu Clicável para outras páginas-->
+            <nav>
+            <ul>
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacaoEscolar.html">Formação Educacional</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="formulario.html">Contato</a></li>
+            </ul>
+            </nav>
+        </div>
+
+        <br> <!--Quebras de Linha-->
+        <br>
+        <br>
+    
+
+    <h2>Sobre mim</h2> <!--Segundo Título-->
+    
+    <br>
+
+    <p> <!--Parágrafos - Conteúdo escrito da página-->
+        Sou natural da cidade de Paraguaçu, sul de Minas Gerais. Atualmente, resido na pitoresca Santa Rita do Sapucaí, 
+        uma cidade que respira inovação e tem desempenhado um papel fundamental em minha evolução pessoal e profissional.
+        Desde que me mudei, fui inspirada pela comunidade inovadora e criativa da região, que me motivou a explorar 
+        o mundo da tecnologia e desenvolvimento de software. Ao longo do tempo, adquiri habilidades em linguagens de programação, 
+        ferramentas e técnicas e estou no caminho de me tornar uma profissional dedicada e experiente.
+    </p>
+
+    <p>
+        Além da tecnologia, tenho vários hobbies e interesses que definem minha vida. Aprecio a leitura de um bom livro, de preferência 
+        livros de suspense, romance e um pouco de terror. Gosto de filmes e séries, também nessa linha de gênero. Estou sempre pronta 
+        para viajar e conhecer novos lugares, de estar em contato com a natureza, de ter momentos offline para a simples apreciação do 
+        momento presente. 
+    </p>
+
+    <p>
+        Atualmente estou cursando Análise e Desenvolvimento de Sistemas pela Uninter e estou muito satisfeita com minha evolução
+        no aprendizado e nas habilidades. Dedico essa página para apresentar meus projetos como desenvolvedora e fazer novos contatos 
+        profissionais. Estou à disposição para propostas de trabalho e novas conexões.
+    </p>
+    
+    <footer class="container rodape"> <!--rodapé para a pagina ficar agradavel visualmente-->
+        <h1>2023 - Meu Portfolio</h1>
+    </footer>
+</body>
+</html>

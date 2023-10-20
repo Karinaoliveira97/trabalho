@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhos Realizados</title>
+    <style>
+        body { /* estilizando todo o corpo da página*/
+            margin: 0;
+            background-color: rgb(248, 231, 240) /*cor de fundo da página*/
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header { /*estilização do cabeçalho*/
+            grid-column-start:1;
+            grid-column-end: 12;
+            background-color: rgb(251, 210, 210);
+            border: 5px solid rgb(10, 9, 9);
+            padding: 15px; /*espaço ao redor do conteúdo*/
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 120%;
+            text-align: justify; /*alinhamento do texto*/
+        }
+
+        .menu { /*estilização do menu clicável*/
+            margin-top: 1%;
+            grid-column-start:8;
+            grid-column-end: 12;
+            justify-content:center;
+        }
+
+        ul {
+            list-style-type: none; /*retirar os pontos da lista não ordenado*/
+        }
+
+        a, a:link { /*estilização dos links clicáveis*/
+            text-decoration-line: none;
+            padding: 5px 10px;
+            border: solid #030404 3px;
+            background-color: rgb(241, 236, 239);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: black;
+            font-size: large;
+        }
+
+        li {
+            float:left;
+        }
+
+        h2 { /*<estilização do título Formação Profissional*/
+            grid-column-start:1;
+            grid-column-end: 12;
+            text-align: center; /*centraliza o texto na página*/
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+            color: black;
+            font-size: 150%;
+        }
+
+        h3 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;
+            font-weight: bold; /*comando para deixar o título em negrito*/
+        }
+        
+        footer { 
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(251, 210, 210);
+            border: 5px solid rgb(10, 9, 9);
+            color: rgb(11, 1, 1);
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <header class="container"> <!--Título da Página-->
+        <h1 style="color: rgb(8, 8, 8); text-align: center;"> Karina Oliveira</h1> 
+    </header>
+        
+    <div class="container menu"> <!--Menu Clicável-->
+        <nav>
+            <ul>
+                 <li><a href="index.html">Sobre Mim</a></li>
+                 <li><a href="formacaoEscolar.html">Formação Educacional</a></li>
+                 <li><a href="portfolio.html">Portfólio</a></li>
+                 <li><a href="formulario.html">Contato</a></li>
+            </ul>
+             </nav>
+    </div>
+        
+    <br><br><br>
+
+    <h2>Portfólio Atualizado</h2>
+    <h3>Aqui estão alguns trabalhos realizados</h3>
+
+    <a href="paginaReceitas.html">Livro de Receitas</a><!--Link Clicável para uma página externa-->
+    <br><br><br>
+    
+    <footer class="container rodape">
+        <h1>2023 - Meu Portfolio</h1>
+    </footer>
+
+</body>
+
+</html>

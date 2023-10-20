@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contato</title>
+
+    <style>
+        body { /* estilizando todo o corpo da página*/
+            margin: 0;
+            background-color: rgb(248, 231, 240) /*cor de fundo da página*/
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header { /*estilização do cabeçalho*/
+            grid-column-start:1;
+            grid-column-end: 12;
+            background-color: rgb(251, 210, 210);
+            border: 5px solid rgb(10, 9, 9);
+            padding: 15px; /*espaço ao redor do conteúdo*/
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 120%;
+            text-align: justify; /*alinhamento do texto*/
+        }
+
+        .menu { /*estilização do menu clicável*/
+            margin-top: 1%;
+            grid-column-start:8;
+            grid-column-end: 12;
+            justify-content:center;
+        }
+
+        ul {
+            list-style-type: none; /*retirar os pontos da lista não ordenado*/
+        }
+
+        a, a:link { /*estilização dos links clicáveis*/
+            text-decoration-line: none;
+            padding: 5px 10px;
+            border: solid #030404 3px;
+            background-color: rgb(241, 236, 239);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: black;
+            font-size: large;
+        }
+
+        li {
+            float:left;
+        }
+
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 150;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: larger;
+            text-align: center;
+        }
+
+        .formulario {
+            text-align: center;
+            margin-top: 10;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: rgb(251, 210, 210);
+            border: 5px solid rgb(10, 9, 9);
+            color: rgb(11, 1, 1);
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="container"> <!--Título da Página-->
+        <h1 style="color: rgb(8, 8, 8); text-align: center;"> Karina Oliveira</h1> 
+    </header>
+    
+        <nav class="container menu">
+            <ul>
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacaoEscolar.html">Formação Educacional</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="formulario.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header><br><br><br>
+
+    <h2> Se interessou pelo meu perfil e gostaria de conhecer melhor o meu trabalho? </h2>
+    <h3> Cadastre seus dados no formulário abaixo e eu entrarei em contato o mais breve possível</h3>
+
+    <div class="container formulario"> <!--Formulario de Cadastro-->
+        <form>
+
+        <label for="nome">Nome:   </label>
+        <input type = "text" name="Nome:" placeholder="Digite seu nome completo" size="50" maxlength="100"><br>
+
+        <label for="email">E-mail:</label>
+        <input type = "text" name="email:" placeholder="Digite seu e-mail" size="50" maxlength="100"><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type = "text" name="email:" placeholder="Digite sua Cidade" size="50" maxlength="100"> <br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="telefone" name="telefone" placeholder="Digite seu Telefone"><br>
+        
+        <label for="estado">Estado:</label>
+        <select name="estado"> <!--criei uma select listando todos os estados para escolha do cliente-->
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select><br><br>
+
+        <label for="mensagem">Mensagem:</label><br><!--Campo para envio de mensagem livre-->
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar"><!--botão de enviar-->
+
+        </form>
+    
+    </div>
+
+    <footer class="container rodape">
+        <h1>2023 - Meu Portfolio</h1>
+    </footer>
+    
+</body>
